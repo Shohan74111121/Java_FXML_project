@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+   <children>
+      <TreeTableView fx:id="DeliveryScheduleColumn" layoutX="67.0" layoutY="60.0" prefHeight="338.0" prefWidth="611.0">
+        <columns>
+          <TreeTableColumn prefWidth="122.4000244140625" text="Delivery Date" />
+          <TreeTableColumn prefWidth="371.1999969482422" text="Product" />
+            <TreeTableColumn prefWidth="116.7999267578125" text="Delivery Status" />
+        </columns>
+      </TreeTableView>
+      <Line endX="599.0" endY="-3.814697265625E-6" layoutX="101.0" layoutY="46.0" startX="-101.00001525878906" startY="-7.62939453125E-6" />
+      <Line endX="-88.50712585449219" endY="414.0" layoutX="135.0" layoutY="86.0" startX="-88.50712585449219" startY="-86.00000762939453" />
+      <Polygon fill="#006cd1" layoutX="46.0" layoutY="24.0" points="-46.707115173339844, 22.70709991455078, -0.007122039794921875, 4.299985885620117, -0.007122039794921875, -24.0000057220459" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="BackToDashboard" layoutX="86.0" layoutY="421.0" mnemonicParsing="false" onAction="#OpensDashboard" prefHeight="30.0" prefWidth="84.0" text="Back" />
+      <Label layoutX="299.0" layoutY="10.0" text="Delivery Schedule " textFill="#006cd1">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

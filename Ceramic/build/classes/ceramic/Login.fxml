@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceramic.LoginController">
+   <children>
+      <SplitPane layoutY="2.0">
+         <items>
+            <AnchorPane prefHeight="559.0" prefWidth="323.0" style="-fx-background-color: #0598ff;" SplitPane.resizableWithParent="false">
+               <children>
+                  <Label layoutX="45.0" layoutY="208.0" prefHeight="41.0" prefWidth="234.0" text="SNKS Ceramics" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Bold Italic" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <PasswordField fx:id="loginPassword" layoutX="447.0" layoutY="245.0" promptText="EnterPassword" />
+      <TextField fx:id="loginName" layoutX="446.0" layoutY="197.0" promptText="EnterName" />
+      <ChoiceBox fx:id="employeeList" layoutX="446.0" layoutY="288.0" prefWidth="150.0" />
+      <Button fx:id="submitButton" layoutX="494.0" layoutY="360.0" mnemonicParsing="false" onAction="#LoginSubmitClicked" text="Submit" />
+      <Label layoutX="353.0" layoutY="251.0" text="EnterPassword" />
+      <Label layoutX="362.0" layoutY="201.0" text="EnterName" />
+      <Label layoutX="411.0" layoutY="119.0" text="User Login" textFill="#0598ff" wrapText="true">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="292.0" text="User Type" />
+      <Button fx:id="registerEmployee" layoutX="606.0" layoutY="455.0" mnemonicParsing="false" onAction="#RegisterButtonPressed" text="register" />
+   </children>
+</Pane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="592.0" endY="-7.62939453125E-6" layoutX="108.0" layoutY="47.0" startX="-107.99999237060547" startY="-7.62939453125E-6" />
+      <Line endX="-126.5" endY="358.0000305175781" layoutX="174.0" layoutY="142.0" startX="-126.5" startY="-142.0" />
+      <Polygon fill="#006cd1" layoutX="31.0" layoutY="32.0" points="-31.5000057220459, 14.499992370605469, 16.000011444091797, -7.700014114379883, 16.000011444091797, -32.50000762939453" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="250.0" layoutY="9.0" text="Delivery Data Analysis" textFill="#006cd1">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="78.0" text="Pick Date">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="152.0" layoutY="148.0" promptText="Choose Date" />
+      <Label layoutX="107.0" layoutY="148.0" text="From">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="148.0" text="To">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="407.0" layoutY="148.0" promptText="Choose Date" />
+      <Button fx:id="ShowAnalizedData" layoutX="301.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleShowData" prefHeight="38.0" prefWidth="98.0" text="Show Data" />
+      <Button fx:id="BackToDashboard" layoutX="82.0" layoutY="433.0" mnemonicParsing="false" onAction="#OpensDashboard" prefHeight="38.0" prefWidth="78.0" text="Back" />
+   </children>
+</AnchorPane>
