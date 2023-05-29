@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="841.0" text="Add Documents" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceramic.ManageDashBoardMMController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <ToolBar layoutX="19.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="150.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.200000000000045">
+               <items>
+                  <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" text="Sign Out" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" text="Profile" />
+                  <Button mnemonicParsing="false" onAction="#GoBack" text="Back" />
+                  <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="INSIDE" strokeWidth="15.0" text="View Documents" translateX="410.0" wrappingWidth="191.4169921875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <stroke>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="0.3799999952316284" blue="0.3799999952316284" opacity="0.9200000166893005" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </stroke>
+                  </Text>
+               </items>
+            </ToolBar>
+            <ListView fx:id="productList" layoutX="34.0" layoutY="115.0" prefHeight="402.0" prefWidth="324.0" />
+            <Label layoutX="44.0" layoutY="64.0" prefHeight="36.0" prefWidth="79.0" text="List View" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="148.0" layoutY="59.0" mnemonicParsing="false" onAction="#ShowDocuments" prefHeight="46.0" prefWidth="120.0" text="Show Documents" />
+            <Button layoutX="297.0" layoutY="64.0" mnemonicParsing="false" onAction="#OpenDocumentFile" prefHeight="39.0" prefWidth="123.0" text="Open Document" />
+            <TextArea fx:id="ProductDetailsField" editable="false" layoutX="367.0" layoutY="116.0" prefHeight="395.0" prefWidth="458.0" promptText="Product Info View" wrapText="true">
+               <font>
+                  <Font name="Ebrima Bold" size="20.0" />
+               </font></TextArea>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
