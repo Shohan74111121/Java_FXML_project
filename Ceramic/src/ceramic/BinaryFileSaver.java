@@ -15,32 +15,31 @@ import java.util.ArrayList;
  * @author nafis
  */
 public class BinaryFileSaver {
-    
-    
-    public static void writeUserAccountsToBinaryFile(ArrayList<UserAccount> userAccounts) throws IOException {
-     
-     String filePath = System.getProperty("user.dir") + "/NewUsers"  + ".bin";
-      try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(filePath))) {
-        outputStream.writeObject(userAccounts);
+
+  public static void writeUserAccountsToBinaryFile(ArrayList<UserAccount> userAccounts) throws IOException {
+
+    String filePath = System.getProperty("user.dir") + "/NewUsers" + ".bin";
+    try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(filePath))) {
+      outputStream.writeObject(userAccounts);
     } catch (IOException e) {
-        System.out.println("Error writing binary file: " + e.getMessage());
-        throw e;
+      System.out.println("Error writing binary file: " + e.getMessage());
+      throw e;
     }
   }
-    
-    public void CreateBinaryFile() throws IOException{
-         ArrayList<UserAccount> userAccounts = new ArrayList<>();
-          userAccounts.add(new UserAccount("Nafis", "123", "Marketing Manager"));
-          userAccounts.add(new UserAccount("Fuad", "222", "Marketing Staff"));
-          userAccounts.add(new UserAccount("Sifan", "333", "Marketing Staff"));
-          userAccounts.add(new UserAccount("Mark", "444", "Marketing Staff"));
-          userAccounts.add(new UserAccount("Komol", "345", "Shipment and Delivery Manager"));
-          userAccounts.add(new UserAccount("Shohan", "123", "Human Resources"));
-          userAccounts.add(new UserAccount("Ronol", "123", "Account Manager"));
-          userAccounts.add(new UserAccount("Shawkat", "123", "Production Manager"));
-          userAccounts.add(new UserAccount("Shaw", "123", "Production Supervisor"));
-          
-          writeUserAccountsToBinaryFile(userAccounts);
+
+  public void CreateBinaryFile() throws IOException {
+    ArrayList<UserAccount> userAccounts = new ArrayList<>();
+    userAccounts.add(new UserAccount("Nafis", "123", "Marketing Manager"));
+    userAccounts.add(new UserAccount("Fuad", "222", "Marketing Staff"));
+    userAccounts.add(new UserAccount("Sifan", "333", "Marketing Staff"));
+    userAccounts.add(new UserAccount("Mark", "444", "Marketing Staff"));
+    userAccounts.add(new UserAccount("Komol", "345", "Shipment and Delivery Manager"));
+    userAccounts.add(new UserAccount("Shohan", "123", "Human Resources"));
+    userAccounts.add(new UserAccount("Ronol", "123", "Account Manager"));
+    userAccounts.add(new UserAccount("Shawkat", "123", "Production Manager"));
+    userAccounts.add(new UserAccount("Shaw", "123", "Production Supervisor"));
+
+    writeUserAccountsToBinaryFile(userAccounts);
   }
 }
 
@@ -66,6 +65,5 @@ class UserAccount implements java.io.Serializable {
   public String getVerificationCode() {
     return verificationCode;
   }
-  
-  
+
 }
