@@ -43,6 +43,7 @@
                         </RadialGradient>
                      </stroke>
                   </Text>
+                  <Label fx:id="userName" text="Label" />
                </items>
             </ToolBar>
             <SplitPane dividerPositions="0.29797979797979796" layoutX="31.0" layoutY="75.0" prefHeight="442.0" prefWidth="779.0">
@@ -55,7 +56,7 @@
                         <Button layoutX="23.0" layoutY="117.0" mnemonicParsing="false" onAction="#TaskManagemenntButtonClicked" prefHeight="39.0" prefWidth="184.0" text="Task Management" />
                         <Button layoutX="23.0" layoutY="166.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="184.0" text="Inboxes" />
                         <Button layoutX="23.0" layoutY="212.0" mnemonicParsing="false" onAction="#MeetingScheduleButtonPressed" prefHeight="39.0" prefWidth="184.0" text="Meeting Schedule" />
-                        <Button layoutX="23.0" layoutY="261.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="184.0" text="Product Management" />
+                        <Button layoutX="23.0" layoutY="261.0" mnemonicParsing="false" onAction="#ProductManagementButtonClicked" prefHeight="39.0" prefWidth="184.0" text="Product Management" />
                      </children>
                   </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
